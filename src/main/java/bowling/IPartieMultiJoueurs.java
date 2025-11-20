@@ -23,7 +23,7 @@ public interface IPartieMultiJoueurs {
 	 * ou bien "Partie terminée" si la partie est terminée.
 	 * @throws java.lang.IllegalStateException si la partie n'est pas démarrée.
 	 */
-	public String enregistreLancer(int nombreDeQuillesAbattues) throws IllegalStateException;
+	public boolean enregistreLancer(int nombreDeQuillesAbattues) throws IllegalStateException;
 	
 	/**
 	 * Donne le score pour le joueur playerName

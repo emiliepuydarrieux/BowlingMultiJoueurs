@@ -5,7 +5,7 @@ package bowling;
  * lancés successifs d'<b>un seul et même</b> joueur, et de calculer le score
  * final de ce joueur
  */
-public class PartieMonoJoueur {
+public class PartieMonoJoueur{
 
     private final Tour premierTour; // Le premier tour
     private Tour tourCourant; // Le tour en cours
@@ -77,5 +77,10 @@ public class PartieMonoJoueur {
     public int numeroProchainLancer() {
         return estTerminee() ? 0 : tourCourant.getBoulesLancees() + 1;
     }
+
+    public int scorePour(String nomDuJoueur) throws IllegalArgumentException {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'scorePour'");
+    } ;
 
 }
